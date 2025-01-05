@@ -1,6 +1,7 @@
 import app from './App';
+require('dotenv').config(); // Configuring Dot env
 
-const PORT = 3000;
+const PORT = process.env.API_PORT; //  Port from Environment Variable
 
 // Start the server
 app.listen(PORT, () => {
